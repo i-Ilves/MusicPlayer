@@ -11,8 +11,8 @@
   @include containerFlex();
 
   .cover-art {
-    width: 35vmin;
-    height: 35vmin;
+    width: 45vmin;
+    height: 45vmin;
     margin: 0 auto;
     background-image: url($image);
     background-size: cover;
