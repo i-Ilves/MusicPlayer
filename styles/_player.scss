@@ -11,13 +11,13 @@
   @include containerFlex();
 
   .cover-art {
-    width: 45vmin;
-    height: 45vmin;
+    width: 35vmin;
+    height: 35vmin;
     margin: 0 auto;
-    background-image: url("https://www.notediscover.com/art/track/fleetwood-mac-blue-letter-2017-remaster-9969.jpeg");
+    background-image: url($image);
     background-size: cover;
     // background-position: center;
-    border: 1px solid rgba(117, 117, 32, 0.904);
+    border: 1px solid $imgBorder;
   }
 
   .player-title,

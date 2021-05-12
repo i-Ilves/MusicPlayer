@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 @import "./variables";
 @import "./player";
+@import "./playlist";
 
 * {
   box-sizing: border-box;
@@ -48,7 +49,7 @@ main {
   box-shadow: 0 0 5px 5px rgba(128, 128, 128, 0.445);
   // ::before lets us add content to our element right before the initial content is rendered
   &::before {
-    background-image: url("https://www.notediscover.com/art/track/fleetwood-mac-blue-letter-2017-remaster-9969.jpeg");
+    background-image: url($image);
     background-size: cover;
     // We must have content together with ::before
     content: "";
@@ -62,3 +63,16 @@ main {
   }
 }
 
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+
+  #player {
+    order: 1;
+  }
+  #playList {
+    order: 2;
+  }
+  
+}
