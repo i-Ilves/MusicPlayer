@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music Player</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/styles.css">
-</head>
-<body>
-  <nav>
-    <i class="fas fa-chevron-left"></i>
-    <h1>Playlist - The Truth</h1>
-    <i class="fas fa-ellipsis-v"></i>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <i class="fas fa-chevron-left"></i>
+      <h1>Playlist -  Fleetwood Mac</h1>
+      <i class="fas fa-ellipsis-v"></i>
+    </nav>
 
-  <main>
-    
-  </main>
-  
-</body>
+    <main>
+      <!-- Player -->
+      <section id="player">
+        <div class="cover-art"></div>
+
+        <!-- Song info -->
+        <div class="player-title">
+          <i class="fas fa-plus"></i>
+          <div class="song-title">
+            <p>Cloud Connected</p>
+            <p>Rhiannon</p>
+          </div>
+          <i class="fas fa-heart"></i>
+        </div>
+
+        <!-- player progress -->
+        <div class="player-progress">
+          <p>0:40</p>
+          <div class="progress-bar-back">
+            <div class="progress-bar-done"></div>
+          </div>
+          <p>3:42</p>
+        </div>
+
+        <!-- Player controlls -->
+        <div class="player-controlls">
+          <i class="fas fa-redo"></i>
+          <i class="fas fa-backward"></i>
+          <i class="fas fa-play-circle"></i>
+          <i class="fas fa-forward"></i>
+          <i class="fas fa-random"></i>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
